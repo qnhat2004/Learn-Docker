@@ -1,3 +1,4 @@
+![](/imgs/docker-img.png)
 # Các lệnh cơ bản trong Docker
 
 ## Image
