@@ -28,7 +28,7 @@ docker image rm <image_name_or_id>
 
 ### run -it: i-interactive: nhận tương tác, t-terminal: chạy trong terminal. Sử dụng khi muốn tương tác trực tiếp với container thông qua 1 terminal, giúp gỡ lỗi và chạy các lệnh bên trong container một cách thủ công.
 ```bash
-docker run -it <tên image hoặc image-id>
+docker run -it <image-id-or-name>
 ```
 
 ### run -dp: d-detached mode: chạy ở chế độ nền, cho phép tiếp tục sử dụng terminal cho các công việc khác. p-publish: '-p <host_port>:<container_port> cho phép truy cập dichj vụ chạy bên trong container từ máy chủ.
