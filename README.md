@@ -82,3 +82,7 @@ docker rm <container-id_or_name>
 docker rm -f <container-id_or_name>
 ```
 
+### Xóa tất cả container
+```bash
+docker rm -f $(docker ps -aq)
+```
