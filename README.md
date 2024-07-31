@@ -1,4 +1,31 @@
 ![](/imgs/docker-img.png)
+
+# Nội dung:
+- [First project with Docker](#first-project-with-docker)
+- [Các lệnh cơ bản trong Docker](#các-lệnh-cơ-bản-trong-docker)
+
+# First project with Docker
+Để bắt đầu với Docker, chúng ta cần cài đặt Docker Desktop trên máy tính của mình. Sau khi cài đặt xong, chúng ta có thể sử dụng Docker thông qua terminal hoặc Docker Desktop GUI.
+
+- Kiểm tra xem Docker đã cài đặt thành công chưa:
+```bash
+docker --version
+```
+- Kiểm tra xem Docker đang chạy hay không:
+```bash
+docker info
+```
+- Pull 1 image từ Docker Hub:
+```bash
+docker pull sunshinee/quan-ly-nhan-vien-react-app:latest
+```
+- Chạy 1 container từ image vừa pull:
+```bash
+docker run -dp 3000:3000 sunshinee/quan-ly-nhan-vien-react-app:latest
+```
+
+- Mở trình duyệt và truy cập vào địa chỉ `localhost:3000` để xem ứng dụng React đang chạy trong container.
+
 # Các lệnh cơ bản trong Docker
 
 ## Image
@@ -81,4 +108,15 @@ docker rm <container-id_or_name>
 ```bash
 docker rm -f <container-id_or_name>
 ```
+
+# Các bước build project React để push lên Docker Hub
+- Tạo file Dockerfile và Dockerignore
+
+- Tạo file Makefile để tự động hóa lệnh build và push
+
+- Với Makefile, chỉ cần chạy lệnh sau để build và push
+```bash
+make deploy
+```
+
 
