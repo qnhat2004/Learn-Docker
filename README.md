@@ -109,6 +109,7 @@ docker rm <container-id_or_name>
 docker rm -f <container-id_or_name>
 ```
 
+<<<<<<< HEAD
 # Các bước build project React để push lên Docker Hub
 - Tạo file Dockerfile và Dockerignore
 
@@ -120,3 +121,9 @@ make deploy
 ```
 
 
+=======
+### Xóa tất cả container
+```bash
+docker rm -f $(docker ps -aq)
+```
+>>>>>>> 885182816e0724bf4d4897b9d6799de3d57ebce5
